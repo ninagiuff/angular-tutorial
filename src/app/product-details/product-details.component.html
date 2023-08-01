@@ -1,0 +1,9 @@
+<h2>PRODUCT DETAILS</h2>
+
+<img *ngIf="product" mat-card-image class="detail-image" [src]="product.imageUrl" alt="Card image">
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+</div>

@@ -1,4 +1,6 @@
 /* Global Styles */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
 
 * {
   font-family: 'Roboto', Arial, sans-serif;
@@ -140,8 +142,4 @@ app-top-bar h1 {
 }
 
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+
