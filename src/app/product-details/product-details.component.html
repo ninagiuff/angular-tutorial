@@ -1,9 +1,11 @@
 <h2>PRODUCT DETAILS</h2>
+<div style="margin-left: 1rem;">
+  <img *ngIf="product" mat-card-image class="detail-image" [src]="product.imageUrl" alt="Card image">
 
-<img *ngIf="product" mat-card-image class="detail-image" [src]="product.imageUrl" alt="Card image">
-
-<div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
+  <div *ngIf="product">
+    <h3>{{ product.name }}</h3>
+    <h4>{{ product.price | currency }}</h4>
+    <p>{{ product.description }}</p>
+    <button type="button" (click)="addToCart(product)">Buy</button>
+  </div>
 </div>

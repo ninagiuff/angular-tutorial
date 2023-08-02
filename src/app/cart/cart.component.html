@@ -1,0 +1,11 @@
+<h3>Cart</h3>
+
+<p>
+  <a routerLink="/shipping">Shipping Prices</a>
+</p>
+
+<div class="cart-item" *ngFor="let item of items">
+  <img mat-card-image class="detail-image" [src]="item.imageUrl" alt="Card image">
+  <span>{{ item.name }}</span>
+  <span style="color: #1c67df;">{{ item.price | currency }}</span>
+</div>

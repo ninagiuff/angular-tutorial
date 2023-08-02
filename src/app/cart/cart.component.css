@@ -1,0 +1,10 @@
+.detail-image {
+  max-width: 50px;
+  max-height: 70px;
+  border-radius: 8px;
+}
+
+ span, .cart-item  {
+  align-self: center;
+  justify-self: flex-end;
+}
