@@ -6,6 +6,7 @@ import { Product } from '../products';
   styleUrls: ['./product-alerts.component.css']
 })
 export class ProductAlertsComponent {
+  nome='Luca';
   @Input() childproduct: Product | undefined;
-  @Output() notify = new EventEmitter();
+  @Output() notify = new EventEmitter<string>();
 }

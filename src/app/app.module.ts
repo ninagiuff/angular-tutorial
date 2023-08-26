@@ -14,6 +14,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 // import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
 import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 //components
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -31,6 +32,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     ReactiveFormsModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
     MatDividerModule,
     RouterModule,
     AppRoutingModule

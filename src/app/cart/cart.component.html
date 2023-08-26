@@ -8,4 +8,30 @@
   <img mat-card-image class="detail-image" [src]="item.imageUrl" alt="Card image">
   <span>{{ item.name }}</span>
   <span style="color: #1c67df;">{{ item.price | currency }}</span>
+  <!-- <button class="button"> -->
+    <mat-icon (click)="deleteItem(item)">delete</mat-icon>
+  <!-- </button> -->
 </div>
+
+<form style="margin-top: 4rem;"    [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label for="name">
+      Name*
+    </label>
+    <input id="name" type="text" formControlName="name" required><br>
+    <span class="error-message" *ngIf="checkoutForm.get('name')!.touched && checkoutForm.get('name')!.invalid">Inserisci un nome</span>
+  </div>
+
+  <div>
+    <label for="address">
+      Address*
+    </label>
+    <input id="address" type="text" formControlName="address" required><br>
+    <span class="error-message" *ngIf="checkoutForm.get('address')!.touched && checkoutForm.get('address')!.invalid">Inserisci un indirizzo</span>
+  </div>
+
+  <button class="button" type="submit"[disabled]="!checkoutForm.valid">Purchase</button>
+
+</form>
+

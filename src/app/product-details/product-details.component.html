@@ -1,5 +1,8 @@
+<div style="display: flex;">
+<mat-icon [routerLink]="['/']" class=" arrow material-symbols-outlined">arrow_back</mat-icon>
 <h2>PRODUCT DETAILS</h2>
-<div style="margin-left: 1rem;">
+</div>
+<div style="margin-left: 5rem;">
   <img *ngIf="product" mat-card-image class="detail-image" [src]="product.imageUrl" alt="Card image">
 
   <div *ngIf="product">

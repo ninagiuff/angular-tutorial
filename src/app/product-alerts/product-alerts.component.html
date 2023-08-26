@@ -1,3 +1,3 @@
 <p *ngIf="childproduct && childproduct.price > 700"> <!--questi dati arrivano dal parent-->
-  <button type="button" (click)="notify.emit()">Notify Me</button>
+  <button type="button" (click)="notify.emit(this.nome)">Notify Me</button>
 </p>

@@ -8,3 +8,13 @@
   align-self: center;
   justify-self: flex-end;
 }
+
+mat-icon {
+  cursor: pointer;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.error-message {
+  color:red;
+}
